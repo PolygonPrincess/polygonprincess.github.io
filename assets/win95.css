@@ -625,3 +625,6 @@ TABLES
 .social-icon{
     margin: 15px;
 }
+.gray-scale{
+    filter: grayscale(100%);
+}
