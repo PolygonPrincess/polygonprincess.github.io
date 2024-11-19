@@ -622,3 +622,6 @@ TABLES
 .text-shadow{
     text-shadow: 2px 3px black;
 }
+.social-icon{
+    margin:0px 16px;
+}
