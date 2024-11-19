@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <title>Polygon Princess</title>
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0" />
+    <meta author="Zelda W" />
+    <meta property="og:image" content="assets/preview.png" />
+    <link rel="shortcut icon" href="assets/icons/computer-3.png" type="image/png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="assets/win95.css">
+    <script src="https://embed.twitch.tv/embed/v1.js"></script>
+    <style>
+        @media screen and (min-width: 850px) {
+            .twitch {
+                position: relative;
+            }
+            
+            .twitch .twitch-video {
+                width: 75%;
+                padding-top: 42.1875%;
+            }
+            
+            .twitch .twitch-chat {
+                width: 25%;
+                height: auto;
+                position: absolute;
+                top: 0;
+                right: 0;
+                bottom: 0;
+            }
+        }
+        .social-icon{
+            max-height: 64px;
+            margin: 16px;
+        }
+    </style>
+</head>
+
+<body class="windows-scrollbar windows-95-font">
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light navbar-95 windows-95-font">
+        <a class="navbar-brand" href="#"><img src="assets/icons/computer-3.png"> Polygon Princess </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="about.html">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="support.html">Support</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contact.html">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    
+    <!-- Header -->
+    
+    <div class="px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center text-shadow">
+        <h1 class="display-4">Polygon Princess</h1>
+        <p class="lead">Content Creator. Producer. Songwriter. Singer. Programmer.</p>
+    </div>
+    
+    <!-- Not header -->
+    
+    <div class="container">
+        <div class="card square mb-4">
+            <div class="card-header text-shadow">
+                <h4 class="my-0 font-weight-normal"><img src="assets/icons/msie1-2.png" class="icon-16-4"> Find Poly on the Internet</h4>
+            </div>
+            <div class="card-body">
+                <div class="row g-0 m-0">
+                    <div class="col-lg-auto offset-xl-1 offset-md-0 g-0">
+                        <a href="https://twitch.tv/polygonprincess target="_blank" rel="noopener noreferrer""><img class="img social-icon" src="assets/social_icons/twitch_icon.gif"/></a>
+                        <a href="https://tiktok.com/@polygonprincess target="_blank" rel="noopener noreferrer""><img class="img social-icon" src="assets/social_icons/tiktok_logo.gif"/></a>
+                        <a href="https://bsky.app/profile/polygonprincess.bsky.social target="_blank" rel="noopener noreferrer""><img class="img-fluid social-icon" src="assets/social_icons/bluesky_icon.gif"/></a>
+                        <a href="https://www.threads.net/@polygonprincess target="_blank" rel="noopener noreferrer""><img class="img social-icon" src="assets/social_icons/threads_logo.gif"/></a>
+                    </div>
+                    <div class="col-lg-auto g-0 m-0">
+                        <a href="https://www.instagram.com/polygonprincess/ target="_blank" rel="noopener noreferrer""><img class="img social-icon" src="assets/social_icons/instagam_logo.gif"/></a>
+                        <a href="https://ko-fi.com/polygonprincess" target="_blank" rel="noopener noreferrer"><img class="img social-icon" src="assets/social_icons/kofi_logo.gif"/></a>
+                        <a href="https://throne.me/u/polygonprincess" target="_blank" rel="noopener noreferrer"><img class="img social-icon" src="assets/social_icons/throne_logo.gif"/></a>
+                        <a href="https://soundcloud.com/polygonprincess" target="_blank" rel="noopener noreferrer"><img class="img social-icon" src="assets/social_icons/soundcloud_logo.gif"/></a>
+                    </div>
+                    <div class="col-lg-auto g-0 m-0">
+                        <a href="https://open.spotify.com/artist/6GBMVc7Umrcim7gNwVt1Yd" target="_blank" rel="noopener noreferrer"><img class="img social-icon" src="assets/social_icons/spotify_logo.gif"/></a>
+                        <a href="https://music.apple.com/us/artist/polygon-princess/1762694858" target="_blank" rel="noopener noreferrer"><img class="img social-icon" src="assets/social_icons/applemusic_logo.gif"/></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="container">
+        <div class="card square mb-4">
+            <div class="card-header text-shadow">
+                <h4 class="my-0 font-weight-normal"><img src="assets/icons/media_player-0.png" class="icon-16-4"> Watch Poly on Twitch</h4>
+            </div>
+            <div class="card-body">
+                <div class="twitch">
+                    <div class="twitch-video">
+                        <iframe
+                        src="https://player.twitch.tv/?channel=polygonprincess&autoplay=false&parent=polygonprincess.github.io"
+                        frameborder="0"
+                        scrolling="no"
+                        allowfullscreen="true"
+                        height="100%"
+                        width="100%">
+                    </iframe>
+                </div>
+                <div class="twitch-chat">
+                    <iframe
+                    frameborder="0"
+                    scrolling="no"
+                    src="https://www.twitch.tv/embed/polygonprincess/chat&parent=polygonprincess.github.io"
+                    height="100%"
+                    width="100%">
+                </iframe>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+
+<div class="container">
+    <div class="card square mb-4">
+        <div class="card-header text-shadow">
+            <h4 class="my-0 font-weight-normal"><img src="assets/icons/cd_audio_cd-0.png" class="icon-16-4"> Listen to Poly on SoundCloud</h4>
+        </div>
+        <div class="card-body">
+            <iframe width="100%" height="300" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/1909389299&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
+            <div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;">
+                <a href="https://soundcloud.com/polygonprincess" title="Polygon Princess" target="_blank" style="text-decoration: none;">Polygon Princess</a> · <a href="https://soundcloud.com/polygonprincess/sets/polys-tracks" title="Polygon Princess Spotlight" target="_blank" style="text-decoration: none;">Polygon Princess Spotlight</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Footer -->
+<footer class="taskbar">
+    <div class="row" style="margin-right: 0px;">
+        <div class="col-8">
+            <a href="https://alex-b.me" class="btn start-button"><img src="assets/icons/users-1.png" class="icon-16">Theme Credit: Alex B</a>
+        </div>
+        <div class="col-4 time">Polygon Princess. 2024.</div>
+    </div>
+    
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+
+</body>
+
+</html>
