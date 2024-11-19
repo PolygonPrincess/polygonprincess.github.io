@@ -231,7 +231,8 @@ CARDS
     /* OR #000082 is better?*/
 }
 .card-header{
-    background: -webkit-linear-gradient(left,#b05284,#f8bbd6);
+    background: -webkit-linear-gradient(left,#b05284,#f8bbd6), url(background.bmp);
+    background-blend-mode: multiply;
     color: #fff;
     display: block;
     white-space: nowrap;
