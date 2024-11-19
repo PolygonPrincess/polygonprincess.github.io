@@ -21,13 +21,9 @@ Body styles
 body {
     font-family: "MS Sans Serif",Tahoma,Verdana,Segoe,sans-serif; 
     background: teal;
-    background-image: url(page_background.jpg);
+    background-image: url(page_background.gif);
     color: white;
     padding-bottom: 28px;
-}
-.bg-cloud{
-    background-image: url(clouds2.jpg);
-    color:#212529;
 }
 
 /*
@@ -235,7 +231,7 @@ CARDS
     /* OR #000082 is better?*/
 }
 .card-header{
-    background: -webkit-linear-gradient(left,#b05284,#a5cef7);
+    background: -webkit-linear-gradient(left,#b05284,#f8bbd6);
     color: #fff;
     display: block;
     white-space: nowrap;
@@ -275,7 +271,7 @@ LIST GROUPS
 }
 .list-group-item-primary{
     color: white;
-    background: -webkit-linear-gradient(left,#b05284,#a5cef7);
+    background: -webkit-linear-gradient(left,#b05284,#f8bbd6);
 }
 .list-group-item-action:hover {
     color: #b05284;
@@ -560,7 +556,7 @@ TODO: make it draggable;
 }
 .modal-header{
     height: 32px;
-    background: -webkit-linear-gradient(left,#b05284,#a5cef7)!important;
+    background: -webkit-linear-gradient(left,#b05284,#f8bbd6)!important;
     color:white;
     padding-top: 0px;
     padding-bottom: 0px;
