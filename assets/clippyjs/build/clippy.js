@@ -844,7 +844,7 @@ clippy.Balloon.prototype = {
 
 };
 
-clippy.BASE_PATH = 'assets/clippyjs/Agents/';
+clippy.BASE_PATH = 'https://raw.githubusercontent.com/PolygonPrincess/polygonprincess.github.io/refs/heads/main/assets/clippyjs/agents/';
 
 clippy.load = function (name, successCb, failCb) {
     var path = clippy.BASE_PATH + name;
