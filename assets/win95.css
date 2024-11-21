@@ -24,6 +24,7 @@ body {
     background-image: url(page_background.gif);
     color: white;
     padding-bottom: 28px;
+    cursor: url(cursor/arrow.cur), auto;
 }
 
 /*
@@ -170,6 +171,7 @@ Button styles
     background: #ffc9e0;
     color: #424242;
     box-shadow: -1px -1px #000;
+    cursor: url(cursor/pointer.cur), pointer;
 }
 .btn:focus {
     border: 2px inset #fff !important;
@@ -178,6 +180,7 @@ Button styles
     box-shadow: -1px -1px #000 !important;
     outline: 0 !important;
     background: url(background.bmp);
+    cursor: url(cursor/pointer.cur), pointer;
 }
 .btn:active {
     border: 2px inset #fff !important;
@@ -185,6 +188,7 @@ Button styles
     box-shadow: -1px -1px #000 !important;
     outline: 0 !important;
     background: url(background.bmp);
+    cursor: url(cursor/pointer.cur), pointer;
 }
 
 .btn-primary{
@@ -620,8 +624,11 @@ TABLES
     text-shadow: 2px 3px black;
 }
 .social-icon{
-    margin: 15px;
+    margin: 14px;
 }
 .gray-scale{
     filter: grayscale(100%);
+}
+a:hover,a:focus,a:active{
+    cursor: url(cursor/pointer.cur), pointer;
 }
