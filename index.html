@@ -3,30 +3,57 @@
 
 <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Polygon Princess | Home</title>
-    <meta name="viewport" content="width=device-width, minimum-scale=1.0" />
-    <meta author="Polygon Princess" />
-    <meta property="og:image" content="assets/preview.png" />
-    <link rel="shortcut icon" href="assets/icons/computer-3.png" type="image/png">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="assets/win95.css">
-    <link rel="stylesheet" type="text/css" href="assets/clippyjs/build/clippy.css">
+    <meta name="description" content="The official home of Polygon Princess, a Twitch streamer, music producer, and content creator. Watch live, listen to music, and find every social link.">
+    <meta name="author" content="Polygon Princess">
+    <meta name="theme-color" content="#b05284">
+    <link rel="canonical" href="https://polygonprincess.com/">
+
+    <link rel="icon" href="/favicon.ico" sizes="any">
+    <link rel="icon" href="/assets/icons/computer-3.png" type="image/png">
+    <link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Polygon Princess">
+    <meta property="og:title" content="Polygon Princess | Home">
+    <meta property="og:description" content="The official home of Polygon Princess, a Twitch streamer, music producer, and content creator. Watch live, listen to music, and find every social link.">
+    <meta property="og:url" content="https://polygonprincess.com/">
+    <meta property="og:image" content="https://polygonprincess.com/assets/preview.png">
+    <meta property="og:image:type" content="image/png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:alt" content="Polygon Princess logo on a retro Windows 95-style card">
+
+    <!-- Twitter / X -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Polygon Princess | Home">
+    <meta name="twitter:description" content="The official home of Polygon Princess, a Twitch streamer, music producer, and content creator. Watch live, listen to music, and find every social link.">
+    <meta name="twitter:image" content="https://polygonprincess.com/assets/preview.png">
+    <meta name="twitter:image:alt" content="Polygon Princess logo on a retro Windows 95-style card">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="/assets/win95.css">
+    <link rel="stylesheet" type="text/css" href="/assets/clippyjs/build/clippy.css">
 </head>
 
-<body class="windows-scrollbar windows-95-font">
+<body class="windows-scrollbar windows-95-font" data-clippy-speech="If you click on me I do goofy shit.">
+    <a class="visually-hidden-focusable" href="#main">Skip to content</a>
+
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-light navbar-95 ">
+    <nav class="navbar navbar-expand-lg navbar-95" aria-label="Main navigation">
         <a class="navbar-brand" href="/">
-            <img class="img pr-4" alt="" role="presentation" src="assets/icons/computer-3.png">
-            <img class="img pl-4" src="assets/polygon_princess_logo_header.gif" alt="Polygon Princess"/>
+            <img class="pe-4" alt="" role="presentation" src="/assets/icons/computer-3.png" width="32" height="32">
+            <img class="ps-4" src="/assets/polygon_princess_logo_header.gif" alt="Polygon Princess" width="187" height="24">
         </a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNavDropdown">
             <ul class="navbar-nav">
-                <li class="nav-item active">
-                    <a class="nav-link" href="/">Home</a>
+                <li class="nav-item">
+                    <a class="nav-link active" href="/" aria-current="page">Home</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="/about/">About</a>
@@ -38,90 +65,84 @@
                     <a class="nav-link" href="mailto:polygon@polygonprincess.com">Contact</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="https://merch.polygonprincess.com">Merch</a>
+                    <a class="nav-link" href="https://merch.polygonprincess.com" target="_blank" rel="noopener noreferrer">Merch</a>
                 </li>
             </ul>
         </div>
     </nav>
-    
-    <!-- Header -->
-    
-    <div class="px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center text-shadow">
-        <img class="img-fluid" onmouseover="agent.animate('Searching')" src="assets/polygon_princess_logo.gif" alt="Graphic warped metallic like text that reads Polygon Princess"/>
-    </div>
-    
-    <!-- Not header -->
-    
-    <div class="container">
-        <div class="card square mb-4">
-            <div class="card-header text-shadow">
-                <h4 class="my-0 font-weight-normal"><img alt="" src="assets/icons/msie1-2.png" class="icon-16-4" role="presentation"> Find me on the Internet</h4>
-            </div>
-            <div class="card-body">
-                <div class="row g-0 m-0">
-                    <div class="col-lg-auto">
-                        <a href="https://twitch.tv/polygonprincess" target="_blank" rel="noopener noreferrer" aria-label="Twitch"><img alt="Twitch icon" data-toggle="tooltip" title="Twitch" class="img social-icon" src="assets/social_icons/twitch_icon.gif"/></a>
-                        <a href="https://bsky.app/profile/polygonprincess.com" target="_blank" rel="noopener noreferrer" aria-label="BlueSky"><img data-toggle="tooltip" title="Bluesky" alt="Bluesky icon" class="img-fluid social-icon" src="assets/social_icons/bluesky_icon.gif"/></a>
-                        <a href="https://www.instagram.com/polygonprincess/" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><img data-toggle="tooltip" title="Instagram" alt="Instagram icon" class="img social-icon" src="assets/social_icons/instagam_logo.gif"/></a>
-                    </div>
-                    <div class="col-lg-auto">
-                        <a href="https://throne.me/u/polygonprincess" target="_blank" rel="noopener noreferrer" aria-label="Throne"><img data-toggle="tooltip" title="Throne" alt="Throne icon" class="img social-icon" src="assets/social_icons/throne_logo.gif"/></a>
-                        <a href="https://venmo.com/u/PolygonPrincess" target="_blank" rel="noopener noreferrer" aria-label="Venmo"><img data-toggle="tooltip" title="Venmo" alt="Venmo icon" class="img social-icon" src="assets/social_icons/venmo_logo.gif"/></a>
-                        <a href="https://ko-fi.com/polygonprincess" target="_blank" rel="noopener noreferrer" aria-label="Ko-Fi"><img data-toggle="tooltip" title="Ko-Fi" alt="Ko-Fi icon" class="img social-icon" src="assets/social_icons/kofi_logo.gif"/></a>
-                    </div>
-                    <div class="col-lg-auto">
-                        <a href="https://soundcloud.com/polygonprincess" target="_blank" rel="noopener noreferrer" aria-label="SoundCloud"><img data-toggle="tooltip" title="SoundCloud" alt="Soundcloud Icon" class="img social-icon" src="assets/social_icons/soundcloud_logo.gif"/></a>
-                        <a href="https://open.spotify.com/artist/6GBMVc7Umrcim7gNwVt1Yd" target="_blank" rel="noopener noreferrer" aria-label="Spotify"><img data-toggle="tooltip" title="Spotify" alt="Spotify icon" class="img social-icon" src="assets/social_icons/spotify_logo.gif"/></a>
-                        <a href="https://music.apple.com/us/artist/polygon-princess/1762694858" target="_blank" rel="noopener noreferrer" aria-label="Apple Music"><img data-toggle="tooltip" title="Apple Music" alt="Apple Music icon" class="img social-icon" src="assets/social_icons/applemusic_logo.gif"/></a>
+
+    <main id="main" tabindex="-1">
+        <!-- Header -->
+        <header class="page-header text-shadow px-3 py-3 pt-md-5 pb-md-4">
+            <h1 class="mb-0">
+                <img class="page-logo" data-clippy-hover src="/assets/polygon_princess_logo.gif" width="1167" height="150" alt="Polygon Princess">
+            </h1>
+        </header>
+
+        <!-- Social links -->
+        <div class="container">
+            <section class="card square mb-4" aria-labelledby="social-heading">
+                <div class="card-header text-shadow">
+                    <h2 class="h4 my-0 fw-normal" id="social-heading"><img alt="" src="/assets/icons/msie1-2.png" class="icon-16-4" width="16" height="16" role="presentation"> Find me on the Internet</h2>
+                </div>
+                <div class="card-body">
+                    <div class="row g-0 m-0">
+                        <div class="col-lg-auto">
+                            <a href="https://twitch.tv/polygonprincess" target="_blank" rel="noopener noreferrer" aria-label="Twitch (opens in a new tab)"><img alt="" data-bs-toggle="tooltip" data-bs-title="Twitch" class="social-icon" src="/assets/social_icons/twitch_icon.gif" width="64" height="64"></a>
+                            <a href="https://bsky.app/profile/polygonprincess.com" target="_blank" rel="noopener noreferrer" aria-label="Bluesky (opens in a new tab)"><img alt="" data-bs-toggle="tooltip" data-bs-title="Bluesky" class="social-icon" src="/assets/social_icons/bluesky_icon.gif" width="64" height="64"></a>
+                            <a href="https://www.instagram.com/polygonprincess/" target="_blank" rel="noopener noreferrer" aria-label="Instagram (opens in a new tab)"><img alt="" data-bs-toggle="tooltip" data-bs-title="Instagram" class="social-icon" src="/assets/social_icons/instagram_logo.gif" width="64" height="64"></a>
+                        </div>
+                        <div class="col-lg-auto">
+                            <a href="https://throne.me/u/polygonprincess" target="_blank" rel="noopener noreferrer" aria-label="Throne (opens in a new tab)"><img alt="" data-bs-toggle="tooltip" data-bs-title="Throne" class="social-icon" src="/assets/social_icons/throne_logo.gif" width="64" height="64"></a>
+                            <a href="https://venmo.com/u/PolygonPrincess" target="_blank" rel="noopener noreferrer" aria-label="Venmo (opens in a new tab)"><img alt="" data-bs-toggle="tooltip" data-bs-title="Venmo" class="social-icon" src="/assets/social_icons/venmo_logo.gif" width="64" height="64"></a>
+                            <a href="https://ko-fi.com/polygonprincess" target="_blank" rel="noopener noreferrer" aria-label="Ko-fi (opens in a new tab)"><img alt="" data-bs-toggle="tooltip" data-bs-title="Ko-fi" class="social-icon" src="/assets/social_icons/kofi_logo.gif" width="64" height="64"></a>
+                        </div>
+                        <div class="col-lg-auto">
+                            <a href="https://soundcloud.com/polygonprincess" target="_blank" rel="noopener noreferrer" aria-label="SoundCloud (opens in a new tab)"><img alt="" data-bs-toggle="tooltip" data-bs-title="SoundCloud" class="social-icon" src="/assets/social_icons/soundcloud_logo.gif" width="64" height="64"></a>
+                            <a href="https://open.spotify.com/artist/6GBMVc7Umrcim7gNwVt1Yd" target="_blank" rel="noopener noreferrer" aria-label="Spotify (opens in a new tab)"><img alt="" data-bs-toggle="tooltip" data-bs-title="Spotify" class="social-icon" src="/assets/social_icons/spotify_logo.gif" width="64" height="64"></a>
+                            <a href="https://music.apple.com/us/artist/polygon-princess/1762694858" target="_blank" rel="noopener noreferrer" aria-label="Apple Music (opens in a new tab)"><img alt="" data-bs-toggle="tooltip" data-bs-title="Apple Music" class="social-icon" src="/assets/social_icons/applemusic_logo.gif" width="64" height="64"></a>
+                        </div>
                     </div>
                 </div>
-            </div>
+            </section>
         </div>
-    </div>
-    
-    <div class="container">
-        <div class="card square mb-4">
-            <div class="card-header text-shadow">
-                <h4 class="my-0 font-weight-normal"><img alt="" src="assets/icons/media_player-0.png" class="icon-16-4" role="presentation"> Watch me on Twitch</h4>
-            </div>
-            <div class="card-body">
-                <iframe src="https://player.twitch.tv/?channel=polygonprincess&parent=polygonprincess.com&autoplay=false" height="800px" width="100%">
-                </iframe>
-            </div>
+
+        <!-- Twitch -->
+        <div class="container">
+            <section class="card square mb-4" aria-labelledby="twitch-heading">
+                <div class="card-header text-shadow">
+                    <h2 class="h4 my-0 fw-normal" id="twitch-heading"><img alt="" src="/assets/icons/media_player-0.png" class="icon-16-4" width="16" height="16" role="presentation"> Watch me on Twitch</h2>
+                </div>
+                <div class="card-body">
+                    <div class="twitch-embed">
+                        <iframe src="https://player.twitch.tv/?channel=polygonprincess&amp;parent=polygonprincess.com&amp;parent=www.polygonprincess.com&amp;parent=polygonprincess.github.io&amp;autoplay=false" title="Polygon Princess live on Twitch" loading="lazy" allow="autoplay; fullscreen; encrypted-media; picture-in-picture"></iframe>
+                    </div>
+                </div>
+            </section>
         </div>
-    </div>
-    
-    <div class="container">
-        <div class="card square mb-4">
-            <div class="card-header text-shadow">
-                <h4 class="my-0 font-weight-normal"><img alt="" src="assets/icons/cd_audio_cd-0.png" class="icon-16-4" role="presentation"> Listen to me on SoundCloud</h4>
-            </div>
-            <div class="card-body">
-                <iframe width="100%" height="400" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/1909389299&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
-            </div>
+
+        <!-- SoundCloud -->
+        <div class="container">
+            <section class="card square mb-4" aria-labelledby="soundcloud-heading">
+                <div class="card-header text-shadow">
+                    <h2 class="h4 my-0 fw-normal" id="soundcloud-heading"><img alt="" src="/assets/icons/cd_audio_cd-0.png" class="icon-16-4" width="16" height="16" role="presentation"> Listen to me on SoundCloud</h2>
+                </div>
+                <div class="card-body">
+                    <iframe class="soundcloud-embed" title="Polygon Princess on SoundCloud" loading="lazy" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/1909389299&amp;color=%23b05284&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;show_teaser=true&amp;visual=true"></iframe>
+                </div>
+            </section>
         </div>
-    </div>
-    
+    </main>
+
     <!-- Footer -->
     <footer class="taskbar text-dark text-center">
-        <p class="mb-0">Polygon Princess. 2026. All Rights Reserved.</p>
+        <p class="mb-0">&copy; 2026 Polygon Princess. All rights reserved.</p>
     </footer>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
-    <!-- Add these scripts to  the bottom of the page -->
-    <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
-    
-    <script src="assets/clippyjs/build/clippy.js"></script>
-    
-    <script type="text/javascript">
-        clippy.load('Clippy', function(agent) {
-            // Do anything with the loaded agent
-            agent.show();
-            agent.speak('If you click on me I do goofy shit.');
-        });
 
-        $(function () {
-            $('[data-toggle="tooltip"]').tooltip()
-        });
-    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src="/assets/clippyjs/build/clippy.js"></script>
+    <script src="/assets/site.js"></script>
 </body>
+
 </html>
