@@ -1,0 +1,45 @@
+name: Validate site
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+jobs:
+  html-validation:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Check internal links and asset references
+        run: |
+          python3 - <<'PY'
+          import re, sys, pathlib
+
+          root = pathlib.Path('.')
+          html_files = list(root.glob('*.html')) + list(root.glob('*/*.html'))
+          failures = []
+
+          for f in html_files:
+              text = f.read_text(encoding='utf-8')
+              for url in re.findall(r'(?:src|href)="([^"]+)"', text):
+                  if url.startswith(('http://', 'https://', 'mailto:', '#', '//')):
+                      continue
+                  path = url.split('?')[0].split('#')[0]
+                  if not path:
+                      continue
+                  target = (root / path.lstrip('/'))
+                  if not target.exists():
+                      failures.append(f'{f}: missing local resource {url}')
+
+          if failures:
+              print('\n'.join(failures))
+              sys.exit(1)
+          print('All local resource references OK.')
+          PY
+
+      - name: HTML validation (W3C Nu checker)
+        uses: cygnetdigital/vnu_jar_validation@v1.1.2
+        with:
+          additionalFlags: '--exit-zero-always --verbose'
+          pathsArgument: './index.html ./about/index.html ./support/index.html ./404.html'

@@ -10,3 +10,7 @@
 *.woff binary
 *.woff2 binary
 *.cur binary
+
+# Vendored libraries (excluded from GitHub language stats)
+assets/clippyjs/** linguist-vendored
+assets/fonts/** linguist-vendored

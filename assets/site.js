@@ -24,6 +24,11 @@
             return;
         }
 
+        // Skip on small screens: saves bandwidth and avoids covering content.
+        if (window.matchMedia && window.matchMedia('(max-width: 575.98px)').matches) {
+            return;
+        }
+
         // Absolute path so Clippy also works from /about/ and /support/.
         clippy.BASE_PATH = '/assets/clippyjs/agents/';
 
