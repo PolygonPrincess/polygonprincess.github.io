@@ -612,6 +612,27 @@ TABLES
 .social-icon{
     margin: 14px;
 }
+/* Center the social icons within the "Find me on the Internet" card body
+   across all responsive layouts. The row is a flex container whose columns
+   are content-width at every breakpoint, so shrinking the card body to fit
+   its content and centering it with auto side margins keeps the icon group
+   visually centered in the card. */
+section[aria-labelledby="social-heading"] > .card-body{
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+}
+.navbar-brand img[src*="computer-3.png"]{
+    /* The icon's artwork reaches the very edge of the 32x32 PNG, so pin it
+       at its exact intrinsic size (no scaling) to avoid clipping and reserve
+       a stable box in the flex row, and drop pe-4's right padding in favor of
+       the logo's own ps-4 spacing. */
+    width: 32px;
+    height: 32px;
+    max-width: none;
+    flex-shrink: 0;
+    padding-right: 0 !important;
+}
 .gray-scale{
     filter: grayscale(100%);
 }

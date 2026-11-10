@@ -10,12 +10,20 @@
     <meta name="theme-color" content="#b05284">
     <link rel="canonical" href="https://polygonprincess.com/">
 
+    <!-- Performance: early connections & critical font preload -->
+    <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+    <link rel="dns-prefetch" href="https://cdn.jsdelivr.net">
+    <link rel="preconnect" href="https://player.twitch.tv" crossorigin>
+    <link rel="preconnect" href="https://w.soundcloud.com" crossorigin>
+    <link rel="preload" href="/assets/fonts/w95fa.woff2" as="font" type="font/woff2" crossorigin>
+
     <link rel="icon" href="/favicon.ico" sizes="any">
     <link rel="icon" href="/assets/icons/computer-3.png" type="image/png">
     <link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
 
     <!-- Open Graph -->
     <meta property="og:type" content="website">
+    <meta property="og:locale" content="en_US">
     <meta property="og:site_name" content="Polygon Princess">
     <meta property="og:title" content="Polygon Princess | Home">
     <meta property="og:description" content="The official home of Polygon Princess, a Twitch streamer, music producer, and content creator. Watch live, listen to music, and find every social link.">
@@ -28,6 +36,8 @@
 
     <!-- Twitter / X -->
     <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@polygonprincess">
+    <meta name="twitter:creator" content="@polygonprincess">
     <meta name="twitter:title" content="Polygon Princess | Home">
     <meta name="twitter:description" content="The official home of Polygon Princess, a Twitch streamer, music producer, and content creator. Watch live, listen to music, and find every social link.">
     <meta name="twitter:image" content="https://polygonprincess.com/assets/preview.png">
@@ -36,9 +46,40 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="/assets/win95.css">
     <link rel="stylesheet" type="text/css" href="/assets/clippyjs/build/clippy.css">
+
+    <!-- Structured data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "name": "Polygon Princess",
+      "url": "https://polygonprincess.com/",
+      "publisher": { "@id": "https://polygonprincess.com/#person" }
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "@id": "https://polygonprincess.com/#person",
+      "name": "Polygon Princess",
+      "url": "https://polygonprincess.com/",
+      "image": "https://polygonprincess.com/assets/preview.png",
+      "jobTitle": ["Twitch Streamer", "Music Producer", "Content Creator"],
+      "sameAs": [
+        "https://twitch.tv/polygonprincess",
+        "https://bsky.app/profile/polygonprincess.com",
+        "https://www.instagram.com/polygonprincess/",
+        "https://soundcloud.com/polygonprincess",
+        "https://open.spotify.com/artist/6GBMVc7Umrcim7gNwVt1Yd",
+        "https://music.apple.com/us/artist/polygon-princess/1762694858",
+        "https://ko-fi.com/polygonprincess"
+      ]
+    }
+    </script>
 </head>
 
-<body class="windows-scrollbar windows-95-font" data-clippy-speech="If you click on me I do goofy shit.">
+<body class="windows-scrollbar windows-95-font" data-clippy-speech="If you click on me, I do goofy stuff!">
     <a class="visually-hidden-focusable" href="#main">Skip to content</a>
 
     <!-- Navbar -->
@@ -75,7 +116,8 @@
         <!-- Header -->
         <header class="page-header text-shadow px-3 py-3 pt-md-5 pb-md-4">
             <h1 class="mb-0">
-                <img class="page-logo" data-clippy-hover src="/assets/polygon_princess_logo.gif" width="1167" height="150" alt="Polygon Princess">
+                <span class="visually-hidden">Polygon Princess</span>
+                <img class="page-logo" data-clippy-hover src="/assets/polygon_princess_logo.gif" width="1167" height="150" alt="" role="presentation">
             </h1>
         </header>
 
@@ -140,7 +182,6 @@
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
-    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
     <script src="/assets/clippyjs/build/clippy.js"></script>
     <script src="/assets/site.js"></script>
 </body>
